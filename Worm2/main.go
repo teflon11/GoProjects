@@ -168,16 +168,18 @@ func (g *Game) Draw(screen *ebiten.Image) {
 	text.DrawWithOptions(screen, fmt.Sprintf(g.printText), pressStartFont, op)
 
 	if g.tittleMode == "Старт" {
-		text.Draw(screen, "Игра Worm2", pressStartFont, fontSize, 2*fontSize, clAqua)
-		text.Draw(screen, "Управление:", pressStartFont, fontSize, 4*fontSize, clAqua)
-		text.Draw(screen, "Left arrow - налево", pressStartFont, fontSize, 6*fontSize, clAqua)
-		text.Draw(screen, "Right arrow - направо", pressStartFont, fontSize, 7*fontSize, clAqua)
-		text.Draw(screen, "Space - пауза", pressStartFont, fontSize, 8*fontSize, clAqua)
-		text.Draw(screen, "Escape - выход", pressStartFont, fontSize, 9*fontSize, clAqua)
-		text.Draw(screen, "На телефоне используйте касания", pressStartFont, fontSize, 11*fontSize, clAqua)
-		text.Draw(screen, "Слева, Справа, Сверху и Снизу.", pressStartFont, fontSize, 12*fontSize, clAqua)
-		text.Draw(screen, "нажмите Space для продолжения", pressStartFont, fontSize, 14*fontSize, clAqua)
-		text.Draw(screen, "Или Escape для выхода", pressStartFont, fontSize, 15*fontSize, clAqua)
+		text.Draw(screen,
+			"Игра Worm2\n\n"+
+				"Управление:\n\n"+
+				"Left arrow - налево\n"+
+				"Right arrow - направо\n"+
+				"Space - пауза\n"+
+				"Escape - выход\n\n"+
+				"На телефоне используйте касания\n"+
+				"Слева, Справа, Сверху и Снизу.\n\n"+
+				"нажмите Space для продолжения\n"+
+				"Или Escape для выхода",
+			pressStartFont, fontSize, 2*fontSize, clAqua)
 	}
 	if g.tittleMode == "Выход" {
 		text.Draw(screen, "=== Игра окончена ===", pressStartFont, fontSize, 2*fontSize, clRed)
