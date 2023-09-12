@@ -1,0 +1,15 @@
+go 1.20
+
+use (	
+	./TestEbiten1
+	./TestEbiten2
+	./TestGit
+	./TestGo1
+	./TestTouch1
+	./TestTouch2
+	./TestTouch3
+	./TestTouch4
+	./TouchWorm
+	./Worm1
+	./Worm2
+)
