@@ -2,7 +2,6 @@ go 1.21.4
 
 use (
 	./MyColor
-	./Stepik
 	./TestEbiten1
 	./TestEbiten2
 	./TestGit
