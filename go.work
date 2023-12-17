@@ -2,6 +2,7 @@ go 1.21.4
 
 use (
 	./MyColor
+	./PackTest1
 	./TestEbiten1
 	./TestEbiten2
 	./TestGit
@@ -10,7 +11,7 @@ use (
 	./TestTouch2
 	./TestTouch3
 	./TestTouch4
-	./TouchWorm
+	./TouchWorm		
 	./Worm1
 	./Worm2
 )
